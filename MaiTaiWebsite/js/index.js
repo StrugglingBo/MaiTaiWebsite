@@ -15,6 +15,8 @@
         $('#dowebok').fullpage(
             {
                 'navigation': true,
+                anchors: ['HomePage', 'CompanyProfile', 'JoinAgent', 'DownloadApp','ContactUs'],
+                menu: '#menu'
             }
         );
     });

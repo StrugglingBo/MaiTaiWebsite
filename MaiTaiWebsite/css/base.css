@@ -1,11 +1,12 @@
 @charset "UTF-8";
-/*css 初始化 */
+
 html{
     font-family:sans-serif;
     /*字体大小自动调整*/
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
+    /*-ms-text-size-adjust:10%;*/
+    /*-webkit-text-size-adjust:10%*/
 }
+body {font: normal 100% Helvetica, Arial, sans-serif;}
 *
 {
     margin:0; padding:0; box-sizing: border-box;
@@ -59,25 +60,3 @@ img
 
 a {color:#666; text-decoration:none; }
 a:hover{color:#C81623;}
-
-/**[class^="icon"]{*/
-    /*background: url(../img/HomePage-banner-1.png) no-repeat;*/
-    /*background-size: 200px 200px;*/
-/*}*/
-
-
-/*body{*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*width: 1366px;*/
-    /*height: 788px;*/
-
-/*}*/
-/*.top{*/
-
-/*}*/
-/*.banner{*/
-    /*width: 1366px;*/
-    /*height: 714px;*/
-    /*background: url("../img/HomePage-banner-1.png") no-repeat;*/
-/*}*/

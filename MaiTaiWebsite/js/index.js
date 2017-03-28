@@ -5,11 +5,11 @@
 // }
 
 // banner效果
-    $(document).ready(function(e) {
-        $('#b03').unslider({
-            dots: true
-        });
-    });
+//    $(document).ready(function(e) {
+//        $('#b03').unslider({
+//            dots: true
+//        });
+//    });
 //全屏滚动插件fullPage.js
     $(function(){
         $('#dowebok').fullpage(

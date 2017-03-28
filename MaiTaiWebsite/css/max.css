@@ -1,0 +1,271 @@
+@charset "utf-8";
+@media screen and (min-width:1440px){
+    #dowebok .media .sectionMasks{
+        width: 80%;
+        height: 90%;
+        margin: 0px auto;
+        position: relative;
+        /*background: yellow;*/
+    }
+    #dowebok .media .sectionMasks .sectionMaskText{
+        width: 100%;
+        height:49%;
+        /*background: red;*/
+        background-color: rgba(0,0,0,0.01);
+    }
+    #dowebok .media .sectionMasks .sectionMaskText p{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+    #dowebok .media .sectionMasks .sectionMaskText .sectionMaskTextP{
+        width:100%;
+        height: 90%;
+        /*background:red;*/
+        margin: 0 auto;
+    }
+    #dowebok .media .sectionMasks .sectionMaskText .sectionMaskTextP span{
+        font-size: 1.3rem;
+        width:68em;
+    }
+    #dowebok .media .sectionMasks .sectionMaskVideo{
+        width: 710px;
+        height: 400px;
+        /*background: blue;*/
+        margin:0 auto;
+    }
+    #dowebok .media .sectionMasks .sectionMaskVideo video{
+        width: 710px;
+        height: 400px;
+    }
+    /*加盟代理*/
+    #dowebok .Join-agent .MaskText{
+        width: 660px;
+        height: 650px;
+        /*background: pink;*/
+        z-index:1000;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 158px;
+    }
+    #dowebok .Join-agent .MaskText img{
+        width: 660px;
+        height: 650px;
+    }
+    #dowebok .Join-agent .MaskText .MaskTexts{
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        bottom:0;
+        width: 80%;
+        color: #fff;
+        /*background: rgba(0,0,0,.8);*/
+        height: 80%;
+        margin:10% 10%;
+    }
+    #dowebok .Join-agent .MaskText .MaskTexts h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    #dowebok .Join-agent .MaskText .MaskTexts p{
+        line-height: 3.5rem;
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    /*下载APP*/
+    #dowebok .DownApp{
+        height: 660px;
+        width: 100%;
+        position: relative;
+    }
+    #dowebok .DownApp .DownApps{
+        height: 74px;
+        width: 520px;
+        /*background: pink;*/
+        position: absolute;
+        margin-top: 48rem;
+        margin-left: 30rem;
+        z-index: 1000;
+    }
+    #dowebok .DownApp .DownApps .DownAppAndroid{
+        position: absolute;
+        left: 0;
+    }
+    #dowebok .DownApp .DownApps .DownAppIOS{
+        position: absolute;
+        right: 0;
+    }
+    /*Android版App下载动画*/
+    #dowebok .DownApp .DownApps .DownAppAndroid .toolbar-item{
+        display:block;
+        width:245px;
+        height:72px;
+        margin-top:1px;
+        position:relative;
+        -moz-transition:background-position 1s;
+        -ms-transition:background-position 1s;
+        -o-moz-transition:background-position 1s;
+        -webkit-moz-transition:background-position 1s;
+        transition:background-position 1s;
+    }
+    #dowebok .DownApp .DownApps .DownAppAndroid .toolbar-item:hover .toolbar-layer{
+        opacity:1;
+        filter:alpha(opacity=100);
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+    }
+    #dowebok .DownApp .DownApps .DownAppAndroid .toolbar-item-app .toolbar-layer{
+        width: 245px;
+        height:245px;
+        /*background-position:0 -222px;*/
+        background-image:url("../img/DownApp-IOS-Android.png");
+    }
+    #dowebok .DownApp .DownApps .DownAppAndroid .toolbar-layer{
+        position:absolute;
+        right:0px;
+        bottom:70px;
+        width:172px;
+        opacity:0;
+        filter:alpha(opacity=0);
+        transform-origin: 95% 95%;
+        -moz-transform-origin: 95% 95%;
+        -ms-transform-origin: 95% 95%;
+        -o-transform-origin: 95% 95%;
+        -webkit-transform-origin: 95% 95%;
+        transform:scale(0.01);
+        -moz-transform:scale(0.01);
+        -ms-transform:scale(0.01);
+        -o-transform:scale(0.01);
+        -webkit-transform:scale(0.01);
+        transition:all 1s;
+        -moz-transition:all 1s;
+        -ms-transition:all 1s;
+        -o-transition:all 1s;
+        -webkit-transition:all 1s;
+    }
+    /*IOS版App下载动画*/
+    #dowebok .DownApp .DownApps .DownAppIOS .toolbar-item{
+        display:block;
+        width:245px;
+        height:72px;
+        margin-top:1px;
+        position:relative;
+        -moz-transition:background-position 1s;
+        -ms-transition:background-position 1s;
+        -o-moz-transition:background-position 1s;
+        -webkit-moz-transition:background-position 1s;
+        transition:background-position 1s;
+    }
+    #dowebok .DownApp .DownApps .DownAppIOS .toolbar-item:hover .toolbar-layer{
+        opacity:1;
+        filter:alpha(opacity=100);
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+    }
+    #dowebok .DownApp .DownApps .DownAppIOS .toolbar-item-app .toolbar-layer{
+        width: 245px;
+        height:245px;
+        /*background-position:0 -222px;*/
+        background-image:url("../img/DownApp-IOS-Android.png");
+    }
+    #dowebok .DownApp .DownApps .DownAppIOS .toolbar-layer{
+        position:absolute;
+        right:0px;
+        bottom:70px;
+        width:172px;
+        opacity:0;
+        filter:alpha(opacity=0);
+        transform-origin: 95% 95%;
+        -moz-transform-origin: 95% 95%;
+        -ms-transform-origin: 95% 95%;
+        -o-transform-origin: 95% 95%;
+        -webkit-transform-origin: 95% 95%;
+        transform:scale(0.01);
+        -moz-transform:scale(0.01);
+        -ms-transform:scale(0.01);
+        -o-transform:scale(0.01);
+        -webkit-transform:scale(0.01);
+        transition:all 1s;
+        -moz-transition:all 1s;
+        -ms-transition:all 1s;
+        -o-transition:all 1s;
+        -webkit-transition:all 1s;
+    }
+    /*联系我们*/
+    #dowebok .CallMiS{
+        height: 660px;
+        width: 100%;
+        position: relative;
+    }
+    #dowebok .CallMiS img{
+        height: 20%;
+        width:100%;
+        margin-top:-36%;
+    }
+    #dowebok .CallMiS .CallMis{
+        height:340px;
+        width: 1070px;
+        /*background: pink;*/
+        position: absolute;
+        margin-top: -94px;
+        margin-left: 148px;
+        z-index: 1000;
+        /*border-bottom: solid 1px;*/
+    }
+    #dowebok .CallMiS .CallMis .CallMisPhone{
+        height: 190px;
+        width: 470px;
+        margin-left: 70px;
+        /*background: yellow;*/
+    }
+    #dowebok .CallMiS .CallMis .CallMisPhone p{
+        font-size: 2.6rem;
+    }
+    #dowebok .CallMiS .CallMis .CallMisPhone span{
+        display: block;
+        text-align: left;
+        line-height: 2;
+        font-size: 1.8rem;
+    }
+    #dowebok .CallMiS .CallMis .CallMisCode{
+        width: 207px;
+        height: 217px;
+        /*background: lawngreen;*/
+        position: absolute;
+        right: 512px;
+        bottom: 0;
+    }
+    #dowebok .CallMiS .CallMis .CallMisCode img{
+        width: 207px;
+        height: 217px;
+        margin:120px 335px;
+    }
+    #dowebok .CallMiS .CallMis .CallMisMap{
+        width: 546px;
+        height: 410px;
+        /*background: green;*/
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    #dowebok .CallMiS .CallMis .CallMisMap img{
+        width: 546px;
+        height: 410px;
+        margin:120px 450px;
+    }
+    #dowebok .CallMiS .footText{
+        width: 700px;
+        height: 30px;
+        /*background: yellow;*/
+        position: absolute;
+        bottom: 40px;
+        left: 330px;
+        margin: 0 200px;
+    }
+}

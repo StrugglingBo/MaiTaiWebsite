@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><!--解决横屏时字体自动放大问题-->
-
-    <!--IE兼容处理-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=7">-->
-    <!--#以上代码告诉IE浏览器，无论是否用DTD声明文档标准，IE8/9都会以IE7引擎来渲染页面。-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=8">-->
-    <!--#以上代码告诉IE浏览器，IE8/9都会以IE8引擎来渲染页面。-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <!--#以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=7,9">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">-->
-    <!--#以上代码IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame.-->
-    <!--谷歌做的一个外挂：Google Chrome Frame(谷歌内嵌浏览器框架GCF)。
-    这个插件可以让用户的IE浏览器外不变，但用户在浏览网页时，实际上使用的是Google Chrome浏览器内核，而且支持IE6、7、8等多个版本的IE浏览器-->
-    <!--<meta content=always name=referrer>-->
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
     <title>浙江麦太科技有限公司</title>
+    <!--媒体查询实现屏幕放缩，内容也放缩-->
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:1366px)" href="css/min.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:1367px) and (max-width:1439px)" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:1440px)" href="css/max.css">
     <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/lib/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/lib/jquery.fullpage.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.SuperSlide.2.1.2.js"></script>
+    <script src="js/lib/jquery.fullpage.min.js"></script>
+    <script src="js/index.js"></script>
+
 </head>
+
 <body>
-    <div class="layout">
+<!--导航栏-->
+<div class="layout">
 
-        <div class="layout-div">
+    <div class="layout-div">
 
-            <div class="hr">
-                <header class="head">
-                    <div class="top">
-                        <div class="CompanyName">
-                            <!--<a href=""></a>-->
-                                <img src="img/MaiTaiLogo.png" alt=""/>
-                        </div>
+        <div class="hr">
+            <header class="head">
+                <div class="top">
+                    <div class="CompanyName">
+                        <!--<a href=""></a>-->
+                        <img src="img/MaiTaiLogo.png" alt=""/>
+                    </div>
 
-                        <div class="MenuBar">
+                    <div class="MenuBar">
+                        <div class="MenuBarUl">
                             <ul>
-                                <li data-menuanchor="HomePage" class="active"><div id="down11"><a href="#HomePage">首页</a>
-                                    <div id="down1"></div>
-                                </div></li>
+                                <li data-menuanchor="HomePage" class="active">
+                                    <div id="down11">
+                                        <a href="#HomePage">首页</a>
+                                        <div id="down1">
+                                        </div>
+                                    </div></li>
                                 <li data-menuanchor="CompanyProfile"><div id="down22"><a href="#CompanyProfile">公司简介</a>
                                     <div id="down2"></div>
                                 </div></li>
@@ -56,142 +56,133 @@
                                 </div></li>
                             </ul>
                         </div>
+                    </div>
 
-                        <div class="CallMi">
-                            <p>全国热线电话：</p>
-                            <span>400-800-6666</span>
-                        </div>
+                    <div class="CallMi">
+                        <p>全国热线电话：</p>
+                        <span>400-886-8097</span>
                     </div>
-                </header>
-            </div>
-
-            <nav class="section banner" id="dowebok">
-                <!--首页-->
-                <div id="b03" class="section active">
-                    <ul>
-                        <li><img src="img/HomePage-banner-1.png" alt=""/></li>
-                        <li><img src="img/CompanyProfile.png" alt=""/></li>
-                        <li><img src="img/Join-banner.png" alt=""/></li>
-                        <li><img src="img/DownApp.png" alt=""/></li>
-                        <li><img src="img/CallMi.png" alt=""/></li>
-                    </ul>
                 </div>
-                <!--公司介绍-->
-                <div class="section sectionMask" id="aa">
-                    <!--遮罩层含麦太科技宣传片-->
-                    <div class="sectionMasks">
-                        <div class="sectionMaskText">
-                            <h1 >麦买购介绍</h1>
-                            <p style="height: 4px;width: 1064px;"></p>
-                            <div class="sectionMaskTextP">
-                                <p style="font-size: 18px;" align="left">
-                                    &nbsp; &nbsp; &nbsp; &nbsp;麦买购是由浙江麦太科技有限公司打造的一个以“免费经济”及“新零售”商业理念为基础的新型购物平台。
-                                    公司坐落于杭州滨江区浙江大学科技园，依托其先进的互联网及商业模式，致力于打造世界一流的资源优配平台。
-                                    我们定位于为全民带来更加美好且有品质的衣食住行的会员制服务平台。<br/>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;麦买购利用全球顶尖的积分互利模式，将互联网与物联网组合，消除供应链的中间环节，实现个人购物与收益的完美契合，
-                                    让更多的人从“免费经济”中获益，最终实现共赢。,<br/>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;麦买购搭建了一个以终端用户、商家、供应商为主体框架的产业链生态系统，保障会员的利益。以创新、关爱、成长及共赢的价值观赢得大众的认可。<br/>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;目前，麦买购已于多家国内外知名企业合作，为会员提供优质的产品，同时帮助会员创造收益。我们期待您的加入，新生活，从麦买购开始！
-                                </p>
-                            </div>
-                        </div>
-                        <div class="sectionMaskVideo">
-                            <!--视频播放-->
-                            <center>
-                                <!--该条video标签只能加载本地(网络上)mp4格式的视频-->
-                                <video src="../1.mp4" controls="controls" width="540" height="300"></video>
-
-                                <!--该标签可加载网络视频播放器资源-->
-                                 <!--<embed class="video" src="http://player.youku.com/player.php/sid/XNzAzNTcyMDI4/v.swf"-->
-                                        <!--quality="high"width="540" height="300" controls-->
-                                        <!--align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed>-->
-                                <!--align="middle"垂直居中-->
-                                <!--allowScriptAccess="sameDomain"   samedomain 只有在 Flash 应用程式来自和 HTML 页相同的域时才允许执行脚本操作;always 允许随时执行脚本操作;never 禁止所有脚本执行操作。-->
-                                <!--allowFullscreen="true" 允许全屏-->
-                            </center>
-                        </div>
-                    </div>
-                    <img src="img/CompanyProfile.png" alt=""/>
-                </div>
-                <!--加盟代理-->
-                <div class="section Mask" id="bb">
-                    <div class="MaskText">
-                        <img src="img/Join-banner-1.png" alt=""/>
-                        <div class="MaskTexts">
-                            <h1>致加盟商</h1>
-                            <div style="height:20px;width:80%;"></div>
-                            <p style="font-size: 18px" align="left">
-                                &nbsp; &nbsp; &nbsp; &nbsp; 欢迎您加盟“麦买购”线下社区精品超市，成为“麦买购”麦太科技科技公司一员。<br/>
-                                &nbsp; &nbsp; &nbsp; &nbsp; 我们与您在未来发展的模式上是相互依存，同舟共济的同盟军。<br/>
-                                &nbsp; &nbsp; &nbsp; &nbsp; 我们与您在未来的收获上是共同发展，利益互惠的共同体。<br/>
-                                &nbsp; &nbsp; &nbsp; &nbsp; 我们携手努力，共同打造“麦买购”这一品牌，为繁荣经济，发展自我而奋斗。
-                            </p>
-                        </div>
-                    </div>
-                    <img src="img/Join-banner.png" alt=""/>
-                </div>
-                <!--下载APP-->
-                <div class="section DownApp" id="cc">
-                    <div class="DownApps">
-                        <div class="DownAppAndroid"><a href="android"><img src="img/IOS.png" alt=""/></a></div>
-                        <div class="DownAppIOS"><a href="IOS"><img src="img/android.png" alt=""/></a></div>
-                    </div>
-                    <img style="margin-top: 94px" src="img/DownloadApp.png" alt=""/>
-                </div>
-                <!--联系我们-->
-                <div class="section CallMiS" id="dd">
-                    <div class="CallMis">
-                        <div class="CallMisPhone">
-                            <h1 style="text-align: left">浙江麦太科技有限公司</h1>
-                            <span>电话：400-800-6666</span>
-                            <span>邮箱：zhejiangmaitai@163.com</span>
-                            <span>传真：400-6981-163</span>
-                            <span>地址：浙江省杭州市滨江区建业路浙大科技园511号</span>
-                        </div>
-                        <div class="CallMisCode"><img src="img/code.png" alt=""/></div>
-                        <div class="CallMisMap"><img src="img/map.png" alt=""/></div>
-                    </div>
-                    <div style="width:90%; height: 1px; border-bottom: solid 1px; position:absolute; left:5%;bottom: 35px;" ></div>
-                    <div class="footText">
-                        <div style="width: 192px;height: 100%;position:absolute;">
-                            <div style="display: inline-block;width: 96px;height: 100%;position:absolute;left:0;font-size:16px;">隐私政策
-                                <div style="width: 96px;height: 16px; border-right: solid 1px;position:absolute;top: 4px;"></div></div>
-                            <div style="display: inline-block;width: 96px;height: 100%;position:absolute;right:0;font-size:16px;">服务条款
-                                <div style="width: 96px;height: 16px; border-right: solid 1px;position:absolute;top: 4px;"></div></div>
-                        </div>
-                        <div style="display: inline-block;width: 496px;height: 100%;position:absolute;left: 192px;font-size:16px;">Copyright @1996-2017 SINA Corporation,All Rights Reserved</div>
-                    </div>
-                    <img style="margin-top: -393px" src="img/ContactUs-banner.png" alt=""/>
-                </div>
-            </nav>
-
-            <!--右侧全屏滚动小圆点-->
-            <div class="right" style="color: rgb(0, 0, 0); margin-top: -43.5px;">
-                <ul>
-                    <li><a href="http://www.dowebok.com/demo/2014/77/index7.html#" class="active"><span></span></a></li>
-                    <li><a href="#aa" class=""><span></span></a></li>
-                    <li><a href="http://www.dowebok.com/demo/2014/77/index7.html#" class=""><span></span></a></li>
-                    <li><a href="http://www.dowebok.com/demo/2014/77/index7.html#" class=""><span></span></a></li>
-                    <li><a href="http://www.dowebok.com/demo/2014/77/index7.html#" class=""><span></span></a></li>
-                </ul>
-            </div>
-
+            </header>
         </div>
     </div>
+</div>
 
-    <script>
-//        给第二页的设置颜色加载，加载闪屏处理
-        window.onload = function () {
-            setTimeout(function () {
-                $('sectionMask').show();
-            }, 100);
-        };
-    </script>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script><script>CFInstall.check();</script>-->
-    <!--Google 官方提供了对 Google Frame 插件安装情况的检测，这里直接调用方法即可，如果检测到 IE 并未安装 Google Frame，则弹出对话框提示安装。-->
-    <script src="js/lib/jquery-1.11.1.min.js"></script>
-    <script src="js/lib/jquery.fullpage.min.js"></script>
-    <script src="js/lib/unslider.min.js"></script>
-    <script src="js/index.js"></script>
+<div id="dowebok">
+    <!--首页-->
+    <div class="section fullSlide" style="margin-top: -48px;">
+        <!--banner图-->
+            <div class="bd">
+                    <ul>
+                        <li><a target="_blank" href=""><img src="img/HomePage-banner-1.png"/></a></li>
+                        <li><a target="_blank" href=""><img src="img/DownApp.png"/></a></li>
+                        <li><a target="_blank" href=""><img src="img/CallMi.png"/></a></li>
+                    </ul>
+            </div>
+            <div class="hd"><ul></ul></div>
+    </div>
+    <!--公司介绍-->
+    <div class="section media">
+        <!--遮罩层含麦太科技宣传片-->
+        <div class="sectionMasks">
+            <div class="sectionMaskText">
+                <p><b>麦买购介绍</b></p>
+                <!--<p style="height: 14px;width: 1064px;"></p>-->
+                <div class="sectionMaskTextP">
+                    <span align="left">
+                        &nbsp;&nbsp;麦买购是由浙江麦太科技有限公司打造的一个以“免费经济”及“新零售”商业理念为基础的新型购物平台。
+                        公司坐落于杭州滨江区浙江大学科技园,依托其先进的互联网及商业模式,致力于打造世界一流的资源优配平台。
+                        我们定位于为全民带来更加美好且有品质的衣食住行的会员制服务平台。<br/>
+                        &nbsp;&nbsp;麦买购利用全球顶尖的积分互利模式，将互联网与物联网组合，消除供应链的中间环节,实现个人购物与收益的完美契合,让更多的人从“免费经济”中获益,最终实现共赢。<br/>
+                        &nbsp;&nbsp;麦买购搭建了一个以终端用户、商家、供应商为主体框架的产业链生态系统,保障会员的利益。以创新、关爱、成长及共赢的价值观赢得大众的认可。<br/>
+                        &nbsp;&nbsp;目前，麦买购已于多家国内外知名企业合作,为会员提供优质的产品,同时帮助会员创造收益。我们期待您的加入,新生活,从麦买购开始！
+                    </span>
+                </div>
+            </div>
+            <div class="sectionMaskVideo">
+                <!--视频播放-->
+                <video controls poster="img/MaiTaiVideo.png">
+                    <source src="MaiTai.mp4" type="video/mp4">
+                    <!--<source src="MaiTai.ogg" type="video/ogg">-->
+                    您的浏览器不能使用最新的视频播放方式呢
+                </video>
+            </div>
+        </div>
+    </div>
+    <!--加盟代理-->
+    <div class="section Join-agent">
+
+        <div class="MaskText">
+            <img src="img/Join-banner-1.png" alt=""/>
+            <div class="MaskTexts">
+                <h1>致加盟商</h1>
+                <p>
+                    &nbsp;&nbsp;欢迎您加盟“麦买购”线下社区精品超市，成为“麦买购”麦太科技科技公司一员。<br/>
+                    &nbsp;&nbsp;我们与您在未来发展的模式上是相互依存，同舟共济的同盟军。<br/>
+                    &nbsp;&nbsp;我们与您在未来的收获上是共同发展，利益互惠的共同体。<br/>
+                    &nbsp;&nbsp;我们携手努力，共同打造“麦买购”这一品牌，为繁荣经济，发展自我而奋斗。
+                </p>
+            </div>
+        </div>
+        <img src="img/Join-banner.png" alt="" style="width: 100%;height: 100%;"/>
+    </div>
+    <!--下载APP-->
+    <div class="section DownApp">
+        <div class="DownApps">
+            <div class="DownAppAndroid">
+                <a class="toolbar-item toolbar-item-app">
+                    <img src="img/android.png" alt=""/>
+                    <span class="toolbar-layer"></span>
+                </a>
+            </div>
+            <div class="DownAppIOS">
+                <a class="toolbar-item toolbar-item-app">
+                    <img src="img/IOS.png" alt=""/>
+                    <span class="toolbar-layer"></span>
+                </a>
+            </div>
+        </div>
+        <img src="img/DownloadApp.png" alt="" style="height: 90%;width:80%;margin:5% 15% 5% 15%;"/>
+    </div>
+    <!--联系我们-->
+    <div class="section CallMiS">
+        <div class="CallMis">
+            <div class="CallMisPhone">
+                <p style="text-align: left">浙江麦太科技有限公司</p>
+                <span>电话：400-886-8097</span>
+                <span>邮箱：maitai@51maimaigo.com</span>
+                <!--<span>传真：400-6981-163</span>-->
+                <span>地址：杭州市滨江区建业路511号华业大厦23楼2308</span>
+            </div>
+            <div class="CallMisCode"><img src="img/code.png" alt=""/></div>
+            <div class="CallMisMap"><img src="img/map.png" alt=""/></div>
+        </div>
+
+        <div style="width:90%; height: 1px; border-bottom: solid 1px; position:absolute; left:5%;bottom: 75px;" ></div>
+        <div class="footText">
+            <div style="width: 192px;height: 100%;position:absolute;">
+                <div style="display: inline-block;width: 96px;height: 100%;position:absolute;left:0;font-size:16px;">隐私政策
+                    <div style="width: 80px;height: 16px; border-right: solid 1px;position:absolute;top: 6px;"></div></div>
+                <div style="display: inline-block;width: 96px;height: 100%;position:absolute;right:0;font-size:16px;">服务条款
+                    <div style="width: 80px;height: 16px; border-right: solid 1px;position:absolute;top: 6px;"></div></div>
+            </div>
+            <div style="display: inline-block;width: 496px;height: 100%;position:absolute;left: 192px;font-size:16px;">Copyright @1996-2017 SINA Corporation,All Rights Reserved</div>
+        </div>
+        <img src="img/ContactUs-banner.png" alt=""/>
+    </div>
+</div>
+<script>
+    //        给第二页的设置延时加载，加载闪屏处理
+    window.onload = function () {
+        setTimeout(function () {
+            $('media').show();
+        }, 3000);
+    };
+</script>
+<script type="text/javascript">
+    $(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop", vis:"auto", autoPlay:true, autoPage:true, trigger:"click" });
+</script>
+<script src="js/lib/h.js"></script>
+
 </body>
 </html>
